@@ -18,11 +18,11 @@
 ## Resumo do Cluster AWS EMR usado
 ![image](https://user-images.githubusercontent.com/58529172/194558574-7a5f752b-b4e8-489b-a3ee-7e303697d530.png)
 
-## Modelo de DataLake
+## Modelo de DataLake (os logs que aparecem na imagem, sãos os logs gerados pelo cluster EMR)
 ![image](https://user-images.githubusercontent.com/58529172/194559076-f02e029a-f2d5-40d8-b3b0-b96bc17c813c.png)
 
 ### Landing Zone (onde os dados foram carregados)
-![image](https://user-images.githubusercontent.com/58529172/194559214-a2979216-73bb-4293-b6c1-3f1d313445ac.png)
+![image](https://user-images.githubusercontent.com/58529172/194560546-904e6383-47f8-4523-8f5e-5cdd6a654c12.png)
 
 ### Processing Zone (onde os dados foram processados e transformados para o formato parquet)
 ![image](https://user-images.githubusercontent.com/58529172/194559718-6ead91e2-84da-4674-9487-374ad70fb1c3.png)
