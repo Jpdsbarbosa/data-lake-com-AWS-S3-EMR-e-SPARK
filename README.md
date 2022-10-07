@@ -2,14 +2,14 @@
 
 - Criando aplicação de engenharia de dados com Spark para carregamento, processamento e entrega de dados prontos para serem utilizados, utilizando AWS S3 como data lake e AWS EMR para criação de clusters de processamento. 
 
-1º passo - criar os buckets no amazon s3, no meu caso criarei 3, a landing zone onde carregarei os dados e meus códigos em Spark, a processing zone onde os dados serão processados e a curated zone onde dados apos serem processados estarão disponíveis para serem utilizados por ciêntistas de dados, engenheiro de machine learning, analistas de dados, ou qualquer outra pessoa que queria utilizar;
+- 1º passo - criar os buckets no amazon s3, no meu caso criarei 3, a landing zone onde carregarei os dados e meus códigos em Spark, a processing zone onde os dados serão processados e a curated zone onde dados apos serem processados estarão disponíveis para serem utilizados por ciêntistas de dados, engenheiro de machine learning, analistas de dados, ou qualquer outra pessoa que queria utilizar;
 
-2º passo - codar a aplicação em spark e subir o arquivo para o s3, mais especificamente no bucket, onde os dados foram carregados;
+- 2º passo - codar a aplicação em spark e subir o arquivo para o s3, mais especificamente no bucket, onde os dados foram carregados;
 
-ps.: no passo dois existe uma conversão de dados do tipo .csv para tipo parquet, isso é algo essecial, uma vez que arquivos do tipo parquet são arquivos super comprimidos, o que na atual era do big data é uma vantagem gigante, pois os torna mais leves para serem trabalhados, no nosso caso os arquivos inicias tinham aproximadamente 4Gb de tamanho e quando convertidos para parquet passam a ter aproximadamente 1,5Gb. Mais infos sobre arquivos parquet: https://learn.microsoft.com/pt-br/azure/databricks/data/data-sources/read-parquet
+  -  ps.: no passo dois existe uma conversão de dados do tipo .csv para tipo parquet, isso é algo essecial, uma vez que arquivos do tipo parquet são arquivos super comprimidos, o que na atual era do big data é uma vantagem gigante, pois os torna mais leves para serem trabalhados, no nosso caso os arquivos inicias tinham aproximadamente 4Gb de tamanho e quando convertidos para parquet passam a ter aproximadamente 1,5Gb. Mais infos sobre arquivos parquet: https://learn.microsoft.com/pt-br/azure/databricks/data/data-sources/read-parquet
 
-3º passo - criação do cluster: escolhi um cluster barato(não ta facil aprender não! kkkkk) pois na aws os serviços de cluster são cobrados por hora. Nesse momento também se configura o encerramento das atividades do cluster para não gerar mais custos. Neste momento dentro o cluster , no meu caso configurei para logo apos ele rodar o step (ou a aplicação em spark) ele encerra o cluster. No step eu configuro o caminho onde esta o meu código para que quando o cluster rode saiba onde esta o arquivo com os código, no meu caso na landing zone.
+- 3º passo - criação do cluster: escolhi um cluster barato(não ta facil aprender não! kkkkk) pois na aws os serviços de cluster são cobrados por hora. Nesse momento também se configura o encerramento das atividades do cluster para não gerar mais custos. Neste momento dentro o cluster , no meu caso configurei para logo apos ele rodar o step (ou a aplicação em spark) ele encerra o cluster. No step eu configuro o caminho onde esta o meu código para que quando o cluster rode saiba onde esta o arquivo com os código, no meu caso na landing zone.
 
-4º passo - logo após criar o cluster, ele vai iniciar, rodar nossa aplicação spark e assim que terminar de rodar nossa aplicação, ira terminar o cluster como configurado em sua criação e não cobrara mais nada
+- 4º passo - logo após criar o cluster, ele vai iniciar, rodar nossa aplicação spark e assim que terminar de rodar nossa aplicação, ira terminar o cluster como configurado em sua criação e não cobrara mais nada
 
-5º passo - Ser feliz que o deploy funcionou o/
+- 5º passo - Ser feliz que o deploy funcionou o/
