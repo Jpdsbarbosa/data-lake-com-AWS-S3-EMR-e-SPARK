@@ -13,3 +13,25 @@
 - 4º passo - logo após criar o cluster, ele vai iniciar, rodar nossa aplicação spark e assim que terminar de rodar nossa aplicação, ira terminar o cluster como configurado em sua criação e não cobrara mais nada
 
 - 5º passo - Ser feliz que o deploy funcionou o/
+
+
+## Resumo do Cluster AWS EMR usado
+![image](https://user-images.githubusercontent.com/58529172/194558574-7a5f752b-b4e8-489b-a3ee-7e303697d530.png)
+
+## Modelo de DataLake
+![image](https://user-images.githubusercontent.com/58529172/194559076-f02e029a-f2d5-40d8-b3b0-b96bc17c813c.png)
+
+### Landing Zone (onde os dados foram carregados)
+![image](https://user-images.githubusercontent.com/58529172/194559214-a2979216-73bb-4293-b6c1-3f1d313445ac.png)
+
+### Processing Zone (onde os dados foram processados e transformados para o formato parquet)
+![image](https://user-images.githubusercontent.com/58529172/194559718-6ead91e2-84da-4674-9487-374ad70fb1c3.png)
+![image](https://user-images.githubusercontent.com/58529172/194560044-71126b81-59e8-48c1-b9c4-ae167d2f5dcd.png)
+
+### Curated Zone (onde os dados estão prontos para serem utilizados)
+![image](https://user-images.githubusercontent.com/58529172/194560209-46f17ce0-69d5-4c10-b5cb-7800ddf69eec.png)
+![image](https://user-images.githubusercontent.com/58529172/194560326-b84ecdbc-cf14-480c-91eb-64e36272ecfc.png)
+
+
+
+
