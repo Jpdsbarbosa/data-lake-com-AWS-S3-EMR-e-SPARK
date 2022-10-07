@@ -26,7 +26,7 @@
 
 ### Processing Zone (onde os dados foram processados e transformados para o formato parquet)
 ![image](https://user-images.githubusercontent.com/58529172/194559718-6ead91e2-84da-4674-9487-374ad70fb1c3.png)
-![image](https://user-images.githubusercontent.com/58529172/194560044-71126b81-59e8-48c1-b9c4-ae167d2f5dcd.png)
+![image](https://user-images.githubusercontent.com/58529172/194560836-d77ab35b-9f0e-4e0c-985b-b1336d02aff5.png)
 
 ### Curated Zone (onde os dados estão prontos para serem utilizados)
 ![image](https://user-images.githubusercontent.com/58529172/194560209-46f17ce0-69d5-4c10-b5cb-7800ddf69eec.png)
